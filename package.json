@@ -1,0 +1,84 @@
+{
+  "name": "iview-admin",
+  "version": "2.0.0",
+  "author": "Lison",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "vue-cli-service serve --open --mode dev --port=1001",
+    "build:long": "vue-cli-service build --mode long",
+    "build:longtest": "vue-cli-service build --mode longtest",
+    "build:prod": "vue-cli-service build --mode prod",
+    "build:test": "vue-cli-service build --mode test",
+    "build": "vue-cli-service build --mode dev",
+    "lint": "vue-cli-service lint",
+    "clean": "rm -rf dist node_modules",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e"
+  },
+  "dependencies": {
+    "@riophae/vue-treeselect": "^0.1.0",
+    "axios": "^0.19.2",
+    "clipboard": "^2.0.6",
+    "clonedeep": "^2.0.0",
+    "codemirror": "^5.52.2",
+    "countup": "^1.8.2",
+    "cropperjs": "^1.5.7",
+    "crypto-js": "^3.3.0",
+    "dayjs": "^1.8.24",
+    "echarts": "^4.7.0",
+    "html2canvas": "^1.0.0-rc.3",
+    "iview": "^3.4.2",
+    "js-cookie": "^2.2.1",
+    "js-md5": "^0.7.3",
+    "moment": "^2.24.0",
+    "simplemde": "^1.11.2",
+    "sortablejs": "^1.10.2",
+    "tree-table-vue": "^1.1.0",
+    "v-org-tree": "^1.0.12",
+    "v-viewer": "^1.5.1",
+    "viewerjs": "^1.5.0",
+    "vue": "^2.6.11",
+    "vue-i18n": "^8.17.3",
+    "vue-router": "^3.1.6",
+    "vue-table-with-tree-grid": "^0.2.4",
+    "vue-uuid": "^1.1.1",
+    "vuedraggable": "^2.23.2",
+    "vuex": "^3.2.0",
+    "wangeditor": "^3.1.1",
+    "xlsx": "^0.14.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.9.2",
+    "@vue/cli-plugin-eslint": "^3.9.2",
+    "@vue/cli-plugin-unit-mocha": "^3.9.0",
+    "@vue/cli-service": "^3.9.3",
+    "@vue/eslint-config-standard": "^3.0.5",
+    "@vue/test-utils": "^1.0.0-beta.33",
+    "chai": "^4.2.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "less": "^2.7.3",
+    "less-loader": "^4.1.0",
+    "lint-staged": "^6.1.1",
+    "mockjs": "^1.1.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
