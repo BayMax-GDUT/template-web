@@ -1,4 +1,4 @@
-# vue-cjy
+# vue-cvaiedu-template
 
 > A Vue.js project
 
